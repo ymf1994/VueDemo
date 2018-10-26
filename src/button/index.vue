@@ -20,7 +20,7 @@ export default {
       default: "primary"
     },
     disabled: {
-      default: false
+      default: true
     }
   },
   data() {
