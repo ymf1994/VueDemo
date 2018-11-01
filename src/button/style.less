@@ -1,12 +1,80 @@
 @import '../base.less';
- .btn{
+.btn {
     outline: none;
-    border:none;
-    padding:0 5px;
+    border: none;
+    padding: 0 5px;
     margin: 0;
     font-size: 14px;
     cursor: pointer;
- };
-.btn[disabled]{
+}
+
+;
+.btn[disabled] {
     cursor: no-drop;
+}
+
+.primary {
+    &[type="default"] {
+        border-radius: 2px;
+        color: @g-white;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.20);
+        background-image: linear-gradient(-269deg, #9FD51E 0%, #6FB92C 100%);
+        &:hover {
+            background-image: linear-gradient(-269deg, #BBE161 3%, #99CD6A 100%);
+        }
+        &:active {
+            color: #C2DC8E;
+            background-image: linear-gradient(-269deg, #8FC01B 0%, #64A627 100%);
+        }
+        &:disabled {
+            background-image: linear-gradient(-269deg, #EBF6D2 0%, #E2F1D4 100%);
+        }
+    }
+}
+
+.secondary {
+    &[type='black'] {
+        color: #333333;
+        border-radius: 2px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.20);
+        background-image: linear-gradient(-269deg, #F8F8F8 0%, #FFFFFF 100%);
+        &:hover {
+            background-image: linear-gradient(-269deg, #F8F8F8 0%, #FFFFFF 100%);
+        }
+        &:active {
+            background-image: linear-gradient(-269deg, #DEDEDE 0%, #E5E5E5 100%);
+        }
+        &:disabled {
+            color: #D6D6D6;
+            background-image: linear-gradient(-269deg, #F8F8F8 0%, #FFFFFF 100%);
+        }
+    }
+}
+
+[size="mini"] {
+    height: 28px;
+    min-width: 78px;
+    .primary;
+    .secondary;
+}
+
+[size="small"] {
+    height: 32px;
+    min-width: 78px;
+    .primary;
+    .secondary;
+}
+
+[size="medium"] {
+    height: 36px;
+    min-width: 96px;
+    .primary;
+    .secondary;
+}
+
+[size="large"] {
+    height: 40px;
+    min-width: 96px;
+    .primary;
+    .secondary
 }

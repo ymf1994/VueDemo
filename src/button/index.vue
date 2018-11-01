@@ -17,7 +17,7 @@ export default {
       default: "small"
     },
     type: {
-      default: "primary"
+      default: "default"
     },
     disabled: {
       default: false
