@@ -24,3 +24,9 @@ npm run test
 ```
 npm run lint
 ```
+### commit - cz
+```
+$ npm install -g commitize
+
+$ commitizen init cz-conventional-changelog --save --save-exact
+```
